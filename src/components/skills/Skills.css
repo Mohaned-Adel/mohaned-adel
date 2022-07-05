@@ -1,0 +1,51 @@
+.SliceSkills {
+    background: white;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    grid-gap: 2px;
+}
+
+.list__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-variant);
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.list__item:hover .item__desc {
+    opacity: 1;
+}
+
+.list__item .item__desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 30px;
+    background: white;
+    font-size: 16px;
+    height: 100%;
+    overflow: hidden;
+    transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+@media only screen and (max-width: 650px) {
+    .list__item {
+        font-size: 1.3rem;
+    }
+}
