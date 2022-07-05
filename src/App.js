@@ -7,11 +7,13 @@ import References from './components/references/References';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
+import './index.css'
+
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div id='Page'>
       {/* <Nav /> */}
       <Header />
       <main>

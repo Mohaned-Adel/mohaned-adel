@@ -1,0 +1,38 @@
+.SliceText {
+    background: white;
+    padding: calc(var(--spacing-unit)*2 + var(--button-size)) var(--spacing-unit) calc(var(--spacing-unit)*2);
+}
+
+.about__content {
+    width: 100%;
+}
+
+.about__content h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.about__content h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.about__content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.about__content p {
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .SliceText {
+        padding: 60px;
+    }
+}
