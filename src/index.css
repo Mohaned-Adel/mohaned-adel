@@ -16,6 +16,8 @@
   --color-primary: #fd8e8e;
   --color-light: rgba(255,255,255,0.6);
 
+  --transition: all 400ms ease;
+
 }
 
 html {
@@ -28,6 +30,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: white;
   line-height: 1.7;
+  height: 10000px;
 }
 
 

@@ -1,0 +1,87 @@
+#header {
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 60px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  color: var(--color-primary);
+}
+
+.header__info {
+  margin: auto;
+}
+
+.header__info h2,
+.header__info h3,
+.header__info h1 {
+  color: var(--color-primary);
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+.header__info h2,
+.header__info h3 {
+  font-weight: 400;
+}
+
+.header__info p {
+  margin: 30px 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.header__info .btn {
+  color: var(--color-primary);
+  background: transparent;
+  font-size: 1.4rem;
+  height: 50px;
+  border: 2px solid var(--color-primary);
+  padding: 0 30px;
+  margin-right: 20px;
+  border-radius: 30px;
+  outline: 0;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn a {
+    color: var(--color-primary);
+}
+
+.header__info .btn:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+.btn a:hover {
+    color: var(--color-bg);
+}
+
+.header__socials {
+  font-size: 0.9rem;
+  color: #b5b6bd;
+}
+
+.header__socials a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ======= Large Devices ====== */
+
+@media only screen and (min-width: 1200px) {
+  #header {
+    width: 50%;
+    left: 0;
+  }
+}
