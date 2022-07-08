@@ -11,11 +11,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 
 const Projects = () => {
   return (
-    <section className="SectionSlice is-sticky SliceProjects">
+    <section className="SectionSlice SliceProjects">
       <h2>Projects</h2>
       <p>
         Swipe or drag below to see a small selection of projects I've worked on
@@ -23,8 +23,9 @@ const Projects = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
+        freeMode={true}
         centeredSlides={true}
-        modules={[Pagination]} className="project__cards">
+        modules={[FreeMode,Pagination]} className="project__cards">
         {/* <ul className="cards__list"> */}
           <SwiperSlide className="card__item">
             <a href="#" className="project__card">

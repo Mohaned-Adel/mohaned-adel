@@ -1,0 +1,56 @@
+.ContactSlice {
+  background: white;
+  padding: calc(var(--spacing-unit)*2 + var(--button-size)) var(--spacing-unit) calc(var(--spacing-unit)*2)
+}
+
+.contact__content h1 {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.contact__content h3 {
+    font-size: 24px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-bg);
+    resize: none;
+}
+
+.contact__form .btn {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background: transparent;
+    border: 2px solid var(--color-bg);
+    color: var(--color-bg);
+    font-size: 18px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact__form .btn:hover {
+    background: var(--color-bg);
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .ContactSlice {
+    padding: var(--spacing-unit);
+  }
+}

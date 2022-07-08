@@ -4,7 +4,12 @@
   width: 100%;
   height: 100%;
   background: var(--color-bg);
-  padding: 60px;
+  padding: var(--spacing-unit);
+}
+
+.header__icon {
+  width: 100%;
+  height: var(--button-size);
 }
 
 .header__content {
@@ -18,13 +23,14 @@
 
 .header__info {
   margin: auto;
+  max-width: 450px;
 }
 
 .header__info h2,
 .header__info h3,
 .header__info h1 {
   color: var(--color-primary);
-  font-size: 3rem;
+  font-size: 24px;
   margin-bottom: 0px;
 }
 
@@ -33,9 +39,18 @@
   font-weight: 400;
 }
 
+.header__info h2 {
+  margin-bottom: 0px;
+}
+
+.header__info h1,
+.header__info h3 {
+  margin-bottom: -10px;
+}
+
 .header__info p {
   margin: 30px 0;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -52,6 +67,10 @@
   outline: 0;
   transition: var(--transition);
   cursor: pointer;
+}
+
+.header__info .btn-cv {
+  margin-bottom: 30px;
 }
 
 .btn a {
@@ -83,6 +102,27 @@
     position: fixed;
     width: 50%;
     left: 0;
-    z-index: 1;
+    z-index: 20;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .header__info {
+    max-width: 600px;
+  }
+  .header__info h2,
+.header__info h3,
+.header__info h1 { 
+  font-size: 3rem;
+}
+.header__info h1,
+.header__info h3 {
+  margin-bottom: -20px;
+}
+.header__info .btn { 
+  margin-bottom: 0;
+}
+.header__info p { 
+  font-size: 1.3rem;
+}
 }

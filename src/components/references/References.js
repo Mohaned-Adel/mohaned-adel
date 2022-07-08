@@ -10,7 +10,7 @@ import { Pagination  } from "swiper";
 import './References.css'
 const References = () => {
     return (
-        <section id="#references" className="SectionSlice is-sticky SliceRef">
+        <section id="#references" className="SectionSlice SliceRef">
             <Swiper className="ref__content"
             modules={[Pagination]}
             spaceBetween={40}

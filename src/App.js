@@ -1,4 +1,4 @@
-// import Nav from './components/nav/Nav'
+import Nav from './components/nav/Nav'
 import Header from './components/header/Header';
 import Introduction from './components/introduction/Introduction';
 import About from './components/about/About';
@@ -14,7 +14,7 @@ import './App.css';
 function App() {
   return (
     <div id='Page'>
-      {/* <Nav /> */}
+      <Nav />
       <Header />
       <main>
         <Introduction />

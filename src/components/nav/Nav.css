@@ -1,0 +1,123 @@
+.AppNav .nav__container .nav__header .btnicon__icon {
+  visibility: visible;
+  z-index: 999;
+}
+
+.is-active {
+  visibility: visible !important;
+}
+
+.AppNav {
+  position: fixed;
+  top: calc(var(--spacing-unit) / 2);
+  left: calc(var(--spacing-unit) / 2);
+  z-index: 30;
+  background-color: transparent;
+  visibility: hidden;
+}
+
+.nav__header {
+  padding: calc(var(--spacing-unit) / 2);
+}
+
+.nav__container {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(46 48 75 / 15%);
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100vw - var(--spacing-unit));
+  max-height: calc(100vh - var(--spacing-unit));
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.btn-icon {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+.btnicon__icon {
+  background-color: var(--color-primary);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0 0.2, 1);
+  z-index: 999;
+}
+
+.btnicon__icon img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.btnicon__label {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 -4px 15px;
+  color: var(--color-bg);
+}
+
+.nav__content {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: calc(var(--spacing-unit) / 2) var(--spacing-unit) var(--spacing-unit);
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  opacity: 1;
+  transform: translate3d(0, 5px, 0);
+}
+
+.nav__item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.nav__item .nav__title {
+  color: var(--color-bg);
+  font-weight: 700;
+}
+
+.nav__item .nav__description {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  .btnicon__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btnicon__label {
+    margin-left: 30px;
+  }
+
+  .nav__inner {
+    padding: 0 calc(var(--spacing-unit) / 2) calc(var(--spacing-unit) / 2);
+  }
+}
