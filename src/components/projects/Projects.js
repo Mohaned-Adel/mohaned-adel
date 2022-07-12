@@ -1,6 +1,3 @@
-import IMG1 from "../../assets/images/memory-game.png";
-import IMG2 from "../../assets/images/myreads.png";
-import IMG3 from "../../assets/images/todo.png";
 import "./Projects.css";
 
 // Import Swiper React components
@@ -12,10 +9,55 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
+  const [Projects, setProjects] = useState([]);
+
+  async function getProjects() {
+    const response = await fetch(`js/data.json`);
+    const data = await response.json();
+
+    const projectsResponse = data.projects;
+
+    setProjects(projectsResponse);
+  }
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  const projectsList = Projects.map((project, index) => {
+    return (
+      <SwiperSlide key={index} className="portfolio__item">
+        <div className="portfolio__item-image">
+          <img src={project.image} alt="Project Template" />
+        </div>
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <div className="portfolio__item-cta">
+          <a
+            href={project.github}
+            className="btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+          <a
+            href={project.demo}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live Demo
+          </a>
+        </div>
+      </SwiperSlide>
+    );
+  });
   return (
-    <section className="SectionSlice SliceProjects">
+    <section id="projects" className="SectionSlice SliceProjects">
       <h2>Projects</h2>
       <p>
         Swipe or drag below to see a small selection of projects I've worked on
@@ -24,37 +66,10 @@ const Projects = () => {
         slidesPerView={1}
         spaceBetween={30}
         freeMode={true}
-        centeredSlides={true}
-        modules={[FreeMode,Pagination]} className="project__cards">
-        {/* <ul className="cards__list"> */}
-          <SwiperSlide className="card__item">
-            <a href="#" className="project__card">
-              <img src={IMG1} alt="memory-game" className="card__image" />
-              <div className="card__info">
-                <h3>Memory Game</h3>
-                <p>Playing a memory card game</p>
-              </div>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className="card__item">
-            <a href="#" className="project__card">
-              <img src={IMG1} alt="memory-game" className="card__image" />
-              <div className="card__info">
-                <h3>Memory Game</h3>
-                <p>Playing a memory card game</p>
-              </div>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className="card__item">
-            <a href="#" className="project__card">
-              <img src={IMG1} alt="memory-game" className="card__image" />
-              <div className="card__info">
-                <h3>Memory Game</h3>
-                <p>Playing a memory card game</p>
-              </div>
-            </a>
-          </SwiperSlide>
-        {/* </ul> */}
+        modules={[FreeMode, Pagination]}
+        className="project__cards"
+      >
+        {projectsList}
       </Swiper>
     </section>
   );

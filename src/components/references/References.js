@@ -1,36 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination  } from "swiper";
+import { Pagination } from "swiper";
 
-import './References.css'
+import "./References.css";
+
 const References = () => {
+    const [referenceData, setReferenceData] = useState([]);
+
+  async function getReferencesData() {
+    const res = await fetch("js/data.json");
+    const data = await res.json();
+
+    const references = data.references;
+
+    // console.log(skills);
+
+    setReferenceData(references);
+  }
+
+  useEffect(() => {
+    getReferencesData();
+  }, []);
+  const referenceList = referenceData.map((reference) => {
     return (
-        <section id="#references" className="SectionSlice SliceRef">
-            <Swiper className="ref__content"
-            modules={[Pagination]}
-            spaceBetween={40}
-            slidesPerView={1}
-            pagination={{clickable: true}}>
-                <SwiperSlide className="ref__article">
-                    <h3>Building Games</h3>
-                    <p>Advanced Experience using JavaScript concepts such as (Higher order functions, callback functions and closures). Also having a good understanding of JavaScript ES6 features such as (Arrow functions, destructuring, Template literals and Promises). Using all of that to build amazing and awesome games and applications</p>
-                </SwiperSlide>
-                <SwiperSlide className="ref__article">
-                    <h3>Creating Apps</h3>
-                    <p>Advanced Experience using ReactJs concepts such as (class and functional components, React Router and Hooks). Also having a good understanding of Redux. Using all of that to build amazing and awesome applications and Templates</p>
-                </SwiperSlide>
-                <SwiperSlide className="ref__article">
-                    <h3>Templates Ninja</h3>
-                    <p>Creating responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using Bootstrap, SASS, JavaScript and HTML</p>
-                </SwiperSlide>
-            </Swiper>
-        </section>
-    )
-}
+      <SwiperSlide key={reference.id} className="ref__article">
+        <h3>{reference.title}</h3>
+        <p>
+          {reference.description}
+        </p>
+      </SwiperSlide>
+    );
+  });
+  return (
+    <section id="references" className="SectionSlice SliceRef">
+      <Swiper
+        className="ref__content"
+        modules={[Pagination]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
+        {referenceList}
+      </Swiper>
+    </section>
+  );
+};
 
 export default References;

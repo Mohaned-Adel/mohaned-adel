@@ -1,13 +1,13 @@
-import './Nav.css'
+import "./Nav.css";
 import IMG from "../../assets/images/icon-hamburger.png";
-import { useState } from 'react';
+import { useState } from "react";
 
 const Nav = () => {
-  const [isActive , setActive] = useState(false);
+  const [isActive, setActive] = useState(false);
 
   const ToggleClass = () => {
-    setActive(!isActive)
-  }
+    setActive(!isActive);
+  };
 
   return (
     <nav className={`AppNav ${isActive ? "is-active" : null}`}>
@@ -23,31 +23,74 @@ const Nav = () => {
         <div className="nav__content">
           <div className="nav__inner">
             <ul className="nav__list">
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("about").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                  ToggleClass();
+                }}
+              >
                 <h4 className="nav__title">About</h4>
                 <p className="nav__description">
                   Delicately tender with a slice of cheese.
                 </p>
               </li>
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("skills").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                  ToggleClass();
+                }}
+              >
                 <h4 className="nav__title">Skills</h4>
                 <p className="nav__description">
                   Our great selection from the best in town
                 </p>
               </li>
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("references").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                  ToggleClass();
+                }}
+              >
                 <h4 className="nav__title">References</h4>
-                <p className="nav__description">
-                  Our special services
-                </p>
+                <p className="nav__description">Our special services</p>
               </li>
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("projects").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                  ToggleClass();
+                }}
+              >
                 <h4 className="nav__title">Projects</h4>
                 <p className="nav__description">
                   Served on a bed of frontend tech.
                 </p>
               </li>
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                  ToggleClass();
+                }}
+              >
                 <h4 className="nav__title">Contact</h4>
                 <p className="nav__description">
                   A superb choice to finish the day

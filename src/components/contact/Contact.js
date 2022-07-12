@@ -26,7 +26,7 @@ const Contact = () => {
       e.target.reset()
   };
   return (
-    <section className="SectionSlice is-sticky ContactSlice">
+    <section id="contact" className="SectionSlice is-sticky ContactSlice">
       <div className="contact__content">
         <h1>Contact me</h1>
         <h3>Don't be shy!</h3>

@@ -1,0 +1,163 @@
+{
+  "skills": [
+    {
+      "title": "HTML-CSS",
+      "description": "Building awesome, responsive and dynamic UI / UX designs"
+    },
+    {
+      "title": "JavaScript(ES6)",
+      "description": "Building advanced applications and games using the latest js and oop features"
+    },
+    {
+      "title": "Bootstrap",
+      "description": "Using its custom css tags and row system to create awesome UI"
+    },
+    {
+      "title": "ReactJs",
+      "description": "Creating applications with APIs and Building Templates with Tailwind css"
+    },
+    {
+      "title": "Git-NPM",
+      "description": "Experience with Git and NPM commands"
+    },
+    {
+      "title": "Jest",
+      "description": "Good Understanding and Knowledge with Jest Unit Testing"
+    },
+    {
+      "title": "TypeScript",
+      "description": "Good Understanding with TypeScript Fundamentals"
+    },
+    {
+      "title": "UI / Ux",
+      "description": "Working with UI / UX designers to build awesome templates"
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "title": "Coding games",
+      "description": "Advanced Experience using JavaScript concepts such as (Higher order functions, callback functions and closures). Also having a good understanding of JavaScript ES6 features such as (Arrow functions, destructuring, Template literals and Promises). Using all of that to build amazing and awesome games and applications. This is a fun way to improve my JavaScript skills."
+    },
+    {
+      "id": 2,
+      "title": "Creating Apps",
+      "description": "Advanced Experience using ReactJs concepts such as (class and functional components, React Router and Hooks). Also having a good understanding of Redux. Using all of that to build amazing and awesome applications and Templates"
+    },
+    {
+      "id": 3,
+      "title": "Templates Ninja",
+      "description": "Creating responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using Bootstrap, SASS, JavaScript and HTML"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "My Reads",
+      "description": "A bookshelf app that allows a user to select and categorize books as currently reading, want to read, or have read. The project emphasizes using React to build the application and provides an API server.",
+      "image": "/images/projects/myreads.png",
+      "github": "https://github.com/Mohaned-Adel/fend-myreads-react",
+      "demo": "https://mohaned-myreads-react.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "title": "Memory Card Game",
+      "description": "This is a Memory game project from Udacity Front-End Nanodegree program, this game is very simple and fun, you can read the Rules from github repo to know how to play it, I hope you enjoy it.",
+      "image": "/images/projects/memory-game.png",
+      "github": "https://github.com/Mohaned-Adel/fend-memory-game",
+      "demo": "https://mohaned-memorycard-game.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 3,
+      "title": "Arcade Game",
+      "description": "This is a Arcade game project from udacity Front-End Nanodegree program.In this game you have a Player and Enemies (Bugs). The goal of the player is to reach the water, without colliding into any one of the enemies.",
+      "image": "/images/projects/arcade-game.PNG",
+      "github": "https://github.com/Mohaned-Adel/fend-arcade-game",
+      "demo": "https://mohaned-arcade-game.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 4,
+      "title": "Weather App",
+      "description": "This is a practice project on ReactJs. In this project you can enter your city and country then by using the weather API it will get the current Temperature and Humidity. This is a basic Weather React App.",
+      "image": "/images/projects/weather.png",
+      "github": "https://github.com/Mohaned-Adel/Temperature-App",
+      "demo": "https://mohaned-weatherapp-react.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 5,
+      "title": "TodoList App",
+      "description": "This is a practice project on ReactJs. In this project you can enter your name and your age into the list and you can also remove it from the list. This is a basic Todo App.",
+      "image": "/images/projects/todo.png",
+      "github": "https://github.com/Mohaned-Adel/TodoList-App",
+      "demo": "https://mohaned-todolist.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 6,
+      "title": "CRUD App",
+      "description": "This is a practice project on ReactJs. In this project you can add new courses or delete existing one.",
+      "image": "/images/projects/crud.png",
+      "github": "https://github.com/Mohaned-Adel/CRUD-App",
+      "demo": "https://mohaned-crudapp-react.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 7,
+      "title": "React Portfolio",
+      "description": "This is another personal project from my series Slicing React PSDs into responsive UIs projects. It was practising on (React and JavaScript).",
+      "image": "/images/projects/react-portfoliotemp.png",
+      "github": "https://github.com/Mohaned-Adel/React-Portfolio",
+      "demo": "https://mohaned-portfolio-react.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 8,
+      "title": "Ultra Template",
+      "description": "This is another personal project from my series Slicing React PSDs into responsive UIs projects. It was practising on (React and JavaScript).",
+      "image": "/images/projects/ultra-temp.png",
+      "github": "https://github.com/Mohaned-Adel/ULTRA-template",
+      "demo": "https://mohaned-ultratemp-react.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 9,
+      "title": "Bondi Template",
+      "description": "This is another personal project from my series Slicing PSDs into responsive UIs projects. It was practising on (HTML5, CSS3, Bootstrap and Pure Responsive concepts).",
+      "image": "/images/projects/bondi-temp.png",
+      "github": "https://github.com/Mohaned-Adel/Bondi-Template",
+      "demo": "https://mohaned-bondi-bootstrap.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 10,
+      "title": "Leon Template",
+      "description": "This is another personal project from my series Slicing PSDs into responsive UIs projects. It was practising on (HTML5, CSS3, Pure Responsive concepts).",
+      "image": "/images/projects/Leon.PNG",
+      "github": "https://github.com/Mohaned-Adel/Leon-Template",
+      "demo": "https://mohaned-leontemplate.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 11,
+      "title": "Spatial Template",
+      "description": "Personal project to practice on web technology from million arab coders program. It was practising on (HTML5, CSS3, Pure Responsive concepts).",
+      "image": "/images/projects/spatial-temp.png",
+      "github": "https://github.com/Mohaned-Adel/Week2_MAC_temp",
+      "demo": "https://mohaned-second-temp.netlify.app/",
+      "priority": 1
+    },
+    {
+      "id": 12,
+      "title": "Softtech Template",
+      "description": "Personal project to practice on web technology from million arab coders program. It was practising on (HTML5, CSS3, Pure Responsive concepts).",
+      "image": "/images/projects/softteck.PNG",
+      "github": "https://github.com/Mohaned-Adel/softtech-temp",
+      "demo": "https://mohaned-softtech.netlify.app/",
+      "priority": 1
+    }
+  ]
+}
