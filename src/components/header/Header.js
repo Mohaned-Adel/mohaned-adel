@@ -14,7 +14,17 @@ const Header = () => {
             My name's Mohaned Adel. I craft user interfaces using modern
             frontend web technologies
           </p>
-          <button className="btn btn-work">Let's work together!</button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("contact").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className="btn btn-work"
+          >
+            Let's work together!
+          </button>
           <button className="btn btn-cv">
             <a
               href="https://drive.google.com/file/d/12CJTCGC5hud959e3fUTFXp4uztfGT2LT/view?usp=sharing"
