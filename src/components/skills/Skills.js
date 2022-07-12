@@ -10,14 +10,11 @@ const Skills = () => {
 
     const skills = data.skills;
 
-    // console.log(skills);
-
     setSkillData(skills);
   }
 
   useEffect(() => {
     getSkillsData();
-    console.log(skillData);
   }, []);
 
   const skillsList = skillData.map((skill, index) => {
