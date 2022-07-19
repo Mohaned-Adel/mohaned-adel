@@ -1,5 +1,5 @@
 import "./Header.css";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/mohanedadel.pdf";
 
 const Header = () => {
   return (
@@ -27,7 +27,7 @@ const Header = () => {
           </button>
           <button className="btn btn-cv">
             <a
-              href="https://drive.google.com/file/d/12CJTCGC5hud959e3fUTFXp4uztfGT2LT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1c0KebsJNDjTQFVy0yvFKF9GpqJ2mxpMd/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

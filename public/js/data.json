@@ -52,6 +52,15 @@
   ],
   "projects": [
     {
+      "id": 13,
+      "title": "Fighting Game",
+      "description": "This is a JavaScript Practicing Project By using javascript latest features and oop classes to build the game.In order to play the game properly you need a keyboard to move the characters, Just Click on the Live Demo Link and enjoy ",
+      "image": "/images/projects/fighting-game.PNG",
+      "github": "https://github.com/Mohaned-Adel/fighting-game",
+      "demo": "https://mohaned-fighting-game.netlify.app/",
+      "priority": 1
+    },
+    {
       "id": 1,
       "title": "My Reads",
       "description": "A bookshelf app that allows a user to select and categorize books as currently reading, want to read, or have read. The project emphasizes using React to build the application and provides an API server.",

@@ -51,7 +51,7 @@ main {
   background: white;
 }
 
-#Page {
+/* #Page {
   position: absolute;
   top: 0;
   right: 0;
@@ -62,7 +62,7 @@ main {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-}
+} */
 .SectionSlice {
   position: relative;
   width: 100%;
