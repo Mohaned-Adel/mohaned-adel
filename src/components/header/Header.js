@@ -27,7 +27,7 @@ const Header = () => {
           </button>
           <button className="btn btn-cv">
             <a
-              href="https://drive.google.com/file/d/1M0g9ZSNCCesSksSWvGxFjA1p3IjsVaiq/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DG0rDRnW9Rmev5g3fI1MGkgqgOiD4lCW/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
